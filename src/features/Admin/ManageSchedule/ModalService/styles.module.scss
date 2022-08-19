@@ -1,0 +1,186 @@
+.createStaff {
+  margin-top: 20px;
+
+  :global {
+    .ant-form-item-control-input-content {
+      input {
+        &::placeholder {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          /* identical to box height, or 171% */
+          letter-spacing: 0.4px;
+          color: rgba(58, 39, 82, 0.68);
+          padding-left: 14px;
+        }
+      }
+    }
+    .ant-select-status-error.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input)
+      .ant-select-selector {
+      background-color: transparent;
+      border-color: #ff4d4f !important;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background-color: transparent;
+      border: none;
+    }
+    .ant-select-single .ant-select-selector {
+      display: block;
+    }
+    .ant-modal-footer {
+      display: none !important;
+    }
+    .ant-modal-content {
+      border-radius: 20px !important;
+    }
+    .ant-modal-close {
+      top: -25px !important;
+      right: -25px !important;
+      .ant-modal-close-x {
+        height: auto;
+        width: auto;
+      }
+    }
+    .reactEasyCrop_Container {
+      position: relative;
+      width: 309px !important;
+      height: 309px !important;
+      top: 40%;
+      left: 50%;
+      transform: translate(-49%, 2%);
+    }
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      padding: 0;
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        letter-spacing: 0.4px;
+        color: #000;
+      }
+    }
+
+    .ant-select-selection-placeholder {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+      letter-spacing: 0.4px;
+      color: rgba(58, 39, 82, 0.68) !important;
+      padding-left: 10px !important;
+    }
+  }
+  .titleCreateStaff {
+    // text-align: center;
+    margin-left: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    .nameCreate {
+      text-align: center;
+      justify-content: center;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 24px;
+      background: linear-gradient(90deg, #fd409a -3.78%, #223263 79.03%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .createStaffContainer {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    min-height: 440px;
+    max-height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    .currentWorkingHour {
+      .textCurrentWorkingHour {
+        font-size: 14px;
+        font-weight: 600px;
+      }
+    }
+    .timeWorkingHour {
+      // margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      // width: 100%;
+      height: fit-content;
+      .hourOfDay {
+        min-width: 120px;
+        max-width: fit-content;
+        // padding: 5px;
+        max-height: fit-content;
+        min-height: 68px;
+        // justify-content: center;
+        margin-top: 5px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        box-sizing: border-box;
+        // text-align: center;
+        box-shadow: 3px 3px 20px rgba(214, 214, 214, 0.15);
+        background-color: #f08809;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        .deleteIcon {
+          top: -16px !important;
+          left: 107px !important;
+          position: relative;
+          cursor: pointer;
+        }
+        .updateIcon {
+          top: -16px !important;
+          left: 67px !important;
+          position: relative;
+          cursor: pointer;
+        }
+        .textHour {
+          width: fit-content;
+          margin-top: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+      .plusHour {
+        min-width: 150px;
+        cursor: pointer;
+        max-width: fit-content;
+        padding: 5px;
+        // max-height: fit-content;
+        height: 68px;
+        // justify-content: center;
+        margin-top: 5px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 3px 3px 20px rgba(214, 214, 214, 0.15);
+        background-color: rgb(232, 227, 227);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        .textHour {
+          margin-top: 8px;
+          color: rgb(12, 12, 12);
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

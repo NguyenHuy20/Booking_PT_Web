@@ -1,0 +1,205 @@
+.listCenterContent {
+
+  overflow: hidden;
+  min-height: 308px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  // align-items: flex-start;
+  padding-top: 30px;
+  gap: 15px;
+  position: relative;
+  width: 100vw;
+  // height: calc(100% - 20px);
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 30px;
+
+
+  .scroll {
+    width: 100%;
+    overflow: auto;
+  }
+
+
+  .Center {
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    background: linear-gradient(180deg, #ffffff 60.28%, #a8cece 100%);
+    /* light blue */
+    border: 1px solid #141415;
+    border-radius: 10px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+
+    flex-direction: column;
+    padding: 42px;
+
+    .centerInfo {
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      gap: 10px;
+      justify-content: space-between;
+      width: 100%;
+      height: 30px;
+      padding-top: 20px;
+      padding-right: 250px;
+
+      .infoCen {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+
+
+        .textNameCenter {
+          min-width: 97px;
+          max-width: auto;
+          height: 17px;
+          margin-left: 20px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 17px;
+          margin-top: 5px;
+          /* identical to box height */
+
+          /* Black blue */
+
+          color: black;
+          /* Inside auto layout */
+
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+        }
+      }
+
+      .detailInfoCenter {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 29px;
+        justify-content: flex-end;
+        width: 100%;
+        height: 17px;
+        color: black;
+
+
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 17px;
+        /* identical to box height */
+
+        /* #000000 */
+
+
+
+        .addressCenter {
+          margin-top: 5px;
+          margin-left: 200px;
+
+          width: 600px;
+        }
+
+        .lineDetailInfoCenter {
+          width: 1px;
+          height: 17px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          /* light blue */
+
+          color: #ebf0ff;
+
+          /* Inside auto layout */
+
+          flex: none;
+          // order: 1;
+          flex-grow: 0;
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  // margin-top: -20px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .listCenterContent {
+    .Center {
+      width: 100%;
+
+      .centerInfo {
+
+
+        .infoCen {
+
+
+          .textNameCenter {
+
+            margin-bottom: 30px;
+            position: absolute;
+            text-align: center;
+          }
+
+          .centerImg {
+            width: 230px !important;
+            height: 145px !important;
+            opacity: 0.5;
+            margin-left: 15px;
+
+          }
+        }
+
+        .detailInfoCenter {
+          display: none;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 9px;
+          justify-content: flex-end;
+          width: 150px;
+          height: 17px;
+          margin-bottom: 100px;
+          margin-left: 50px;
+
+
+
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+
+          .addressCenter {
+            padding-top: 20px;
+            width: 200px;
+            margin-left: 10px;
+          }
+
+
+        }
+      }
+    }
+  }
+}
